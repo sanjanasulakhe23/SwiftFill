@@ -60,4 +60,12 @@ SwiftFill is a lightweight Chrome extension that **automatically fills out Googl
 ---
 
 ## 📂 Folder Structure
+form_autofiller/
+│
+├── manifest.json
+├── popup.html / popup.js
+├── options.html / options.js
+├── content.js
+├── iconnn.png
+└── README.md
 
