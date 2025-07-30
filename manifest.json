@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Google Form Autofill",
+  "version": "1.0",
+  "description": "Autofill Google Forms with your saved info.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "iconnn.png"
+  },
+  "icons": {
+    "16": "iconnn.png",
+    "48": "iconnn.png",
+    "128": "iconnn.png"
+  },
+  "permissions": ["tabs", "scripting", "storage"],
+  "host_permissions": ["https://docs.google.com/forms/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["https://docs.google.com/forms/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

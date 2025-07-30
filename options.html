@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Set Info</title>
+    <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+      margin: 0;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    form {
+      background: #c08d8d;
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 6px;
+      color: #000000;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #a92c2c;
+      color: white;
+      padding: 22px;
+      width: 100%;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #218321;
+    }
+
+    .success-banner {
+      text-align: center;
+      background: #e6ffed;
+      color: #863271;
+      border: 1px solid #3d1831;
+      border-radius: 6px;
+      padding: 10px;
+      margin-bottom: 15px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>Set Your Autofill Information</h2>
+  <form id="settings-form">
+    <label>Email</label><input type="email" name="email" required>
+    <label>Full Name</label><input type="text" name="full name">
+    <label>College Roll No</label><input type="text" name="college roll">
+    <label>Contact No</label><input type="text" name="contact">
+    <label>College Name</label><input type="text" name="college name">
+    <label>BTech CGPA</label><input type="text" name="btech cgpa">
+    <label>BTech Year of Passing</label><input type="text" name="btech year of passing">
+    <label>Gender</label><input type="text" name="gender">
+    <label>Branch</label><input type="text" name="branch">
+    <label>Placed</label><input type="text" name="placed">
+    <label>Acknowledgement</label><input type="text" name="acknowledgement">
+    <button type="submit">Save Info</button>
+  </form>
+
+  <script src="options.js"></script>
+</body>
+</html>
